@@ -82,3 +82,60 @@ margin-bottom: 50px;
 .time p{
     opacity: 0.4;
 }
+.statis{
+    width: 116%;
+    height: 130px;
+    background-color: #121212;
+    
+}
+.stats{
+    display: flex;
+    align-items: center;
+    gap: 81px;
+    padding-top: 35px;
+}
+.stats button{
+    width: 169px;
+    height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+border-radius: 50px;
+border: none;
+color: white;
+font-weight: 700;
+}
+.pupils{
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+.pup-text p{
+    opacity: 0.4;
+}
+.pup-number p{
+    font-weight: 700;
+}
+ .box-scale span{
+    color: white;
+    margin-left: 30px;
+    
+ }
+.box-scale p{
+    color: white;
+    color: #4D4D4DFF;
+ }
+.scale{
+    width: 714px;
+    height: 6px;
+    background-color: white;
+    margin-top: 7px;
+}
+.in-scale{
+    width: 440px;
+    height: 100%;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+.price-scale{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
