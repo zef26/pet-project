@@ -231,3 +231,6 @@ font-weight: 700;
     display: flex;
     justify-content: space-between;
 }
+body{
+    color: white;
+}
