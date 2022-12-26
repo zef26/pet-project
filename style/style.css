@@ -190,3 +190,44 @@ font-weight: 700;
     margin-top: 49px;
     line-height: 160%;
 }
+.wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.item p:nth-child(1){
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+.block{
+    width: 324px;
+    height: 80px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    margin-top: 20px;
+}
+.item-tx p{
+    color: white;
+    opacity: 0.5;
+    font-size: 14px !important;
+    width: 306px;
+    line-height: 160%;
+    margin-top: 35px;
+}
+
+
+.bl-2{
+    height: 60px;
+    
+}
+.bl-3{
+    height: 30px;
+}
+.bl-4{
+    height: 10px;
+}
+
+.item-tx{
+    display: flex;
+    justify-content: space-between;
+}
