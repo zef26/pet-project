@@ -8,6 +8,14 @@
 a{
     text-decoration: none;
 }
+body{
+    background-image: url(../img/body-img.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 button{
     cursor: pointer;
 }
