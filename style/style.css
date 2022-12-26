@@ -21,7 +21,7 @@ button{
 }
 .page-1{
     background-image: url(../img/big_img.png);
-    height:830px;
+    height:960px;
    width: 1920px;
    margin: 0 auto;
     background-size: cover;
@@ -168,5 +168,25 @@ font-weight: 700;
 .wht-doing p{
     color: white;
     width: 636px;
+    line-height: 160%;
+}
+.page-3{
+    margin-top: 200px;
+}
+.load-text{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.load-text p {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+.pg3-text{
+    color: white;
+    opacity: 0.5;
+    width: 411px;
+    margin-top: 49px;
     line-height: 160%;
 }
