@@ -426,4 +426,124 @@ justify-content: flex-end;
             position: absolute;
             left: -73px;
         }
-      
+      .teach-load{
+        display: flex;
+        align-items: center;
+        gap: 38px;
+      }
+.teach-load h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.swiper{
+    margin-top: 113px;
+}
+
+.sw-block{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+   
+    color: white;
+}
+.sw-block h3{
+font-size: 24px;
+font-weight: 500;
+margin-top: 40px;
+}
+.sw-block img{
+    width: 190px;
+}
+.sw-block p{
+    opacity: 0.8;
+    margin-top: 15px;
+}
+.sw-block button{
+    width: 143px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-top: 30px;
+    color: white;
+}
+.swiper-button-prev::after{
+   color: #A23C4CFF;
+}
+.swiper-button-next::after{
+    color: #A23C4CFF;
+ }
+footer {
+    margin-top: 210px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 106px;
+    
+}
+footer h3{
+    font-size: 48px;
+    font-weight: 700;
+}
+footer p{
+    width: 411px;
+    opacity: 0.5;
+    line-height: 160%;
+    margin: 30px 0 60px 0;
+    text-align: center;
+}
+
+footer input{
+    width: 353px;
+    height: 44px;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    outline: none;
+    background-color:rgb(255, 253, 253,0.25);
+    padding-left: 30px;
+}
+::-webkit-input-placeholder{
+   color: white;
+
+}
+footer button{
+    width: 160px;
+    height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+border-radius: 50px;
+border: none;
+color: white;
+font-weight: 700;
+left: -20px;
+z-index: 2;
+position: relative;
+
+}
+.soc-logo{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+.krug{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+}
