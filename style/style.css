@@ -20,12 +20,13 @@ button{
     cursor: pointer;
 }
 .page-1{
-    background-image: url(../img/big_img.png);
+    background-image: url(../img/big-img.png);
     height:960px;
    width: 1920px;
    margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .header-container{
     width: 1760px;
@@ -45,6 +46,9 @@ nav{
 
 .hrefs a{
     color: white;
+}
+.logo{
+    cursor: pointer;
 }
 
 .btn-modal button{
@@ -191,15 +195,22 @@ font-weight: 700;
     line-height: 160%;
 }
 .wrap{
-    display: flex;
-    align-items: center;
     margin-top: 80px;
 }
-.item p:nth-child(1){
+.wrap-txt{
     color: white;
     font-size: 36px;
     font-weight: 700;
+    display: flex;
+   gap: 255px;
+    margin-bottom: 20px;
+    
 }
+.item{
+    display: flex;
+    align-items: center;
+}
+
 .block{
     width: 324px;
     height: 80px;
@@ -297,6 +308,7 @@ font-weight: 700;
     justify-content: center;
     border-right: 1px solid #4C4C4CFF;
     border-bottom: 1px solid #4C4C4CFF;
+    cursor: move;
 }
 .wrapers:nth-child(4){
     border-right: none;
@@ -504,6 +516,7 @@ footer input{
     outline: none;
     background-color:rgb(255, 253, 253,0.25);
     padding-left: 30px;
+    color: white;
 }
 ::-webkit-input-placeholder{
    color: white;
