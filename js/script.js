@@ -71,3 +71,49 @@ for (let anchor of anchors) {
     })
   })
 }
+
+// Модалка в  хидере
+let modal1 = document.querySelector('.btn-modal-win')
+let cross = document.querySelector('.cross')
+let modal_win = document.querySelector('.modal-window')
+let window1 = document.querySelector('.window')
+let md = document.querySelector('.md2')
+let mw = document.querySelector('.mw2')
+let window2 = document.querySelector('.window2')
+let cross2 = document.querySelector('.cross2')
+
+modal1.onclick = ()=> {
+    modal_win.classList.toggle('modal-push')
+    window1.classList.toggle('rotate-modal')
+    document.body.style.overflow = 'hidden'
+}
+cross.onclick = ()=> {
+    modal_win.classList.remove('modal-push')
+    window1.classList.remove('rotate-modal')
+    document.body.style.overflow = 'visible'
+    mw.classList.remove('modal-push')
+    window2.classList.remove('rotate-modal')
+}
+//события с кнопкой
+window.addEventListener("keydown", (event) => {
+    if (event.key == 'Escape') {
+        modal_win.classList.remove('modal-push')
+        window1.classList.remove('rotate-modal')
+        document.body.style.overflow = 'visible'
+        mw.classList.remove('modal-push')
+        window2.classList.remove('rotate-modal')
+    }
+  }, true)
+
+  md.onclick = ()=> {
+    mw.classList.toggle('modal-push')
+    window2.classList.toggle('rotate-modal')
+    document.body.style.overflow = 'hidden'
+    
+}
+cross2.onclick = ()=>{
+    document.body.style.overflow = 'visible'
+    mw.classList.remove('modal-push')
+    window2.classList.remove('rotate-modal')
+    
+}

@@ -11,9 +11,64 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./img/logo.png">
 </head>
 <body>
+<!-- модалка хидера -->
+<div class="modal-window">
+    <div class="window">
+        
+        <div class="back-color">
+            <div class="cross">
+            <img src="./img/cross.png" alt="" width="25px">
+        </div>
+            <form action="#">
+                <label >
+                    <p>Логин</p>
+                <input type="text" required minlength="6" maxlength="16">
+            </label>
+            <label >
+                <p>Пароль</p>
+            <input type="password" minlength="8" maxlength="14">
+        </label>
+                <button>Войти</button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<!-- модалка  -->
+<div class="mw2">
+    <div class="window2">
+        
+        <div class="back-color2">
+            <div class="cross2">
+            <img src="./img/cross.png" alt="" width="25px" >
+        </div>
+            <form action="#">
+                <label >
+                    <p>Имя</p>
+                <input type="text" required minlength="2" maxlength="16">
+            </label>
+            <label >
+                <p>Номер телефона</p>
+            <input type="number" minlength="8" maxlength="14" >
+        </label>
+        <label >
+            <p>Электронная почта</p>
+        <input type="email" required minlength="8" maxlength="14">
+    </label>
+    <div class="md-btns">
+                <button>Войти</button>
+                <button>Получить консультацию</button>
+            </div>
+            <p>Нажимая кнопку, принимаю условия <a href="#">политики</a> и <a href="#">пользовательского соглашения</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
     <!-- первая секция -->
     <section class="page-1">
         <!-- Хидер -->
@@ -35,7 +90,7 @@
                     </div>
                     <!-- Кнопка для модалки -->
                     <div class="btn-modal">
-                        <button>Зайти в кабинет</button>
+                        <button class="btn-modal-win">Зайти в кабинет</button>
                     </div>
                 </nav>
             </div>
@@ -85,7 +140,7 @@
     <div class="statis">
         <div class="container">
             <div class="stats">
-                <button>Заказать курс</button>
+                <button class="md2">Заказать курс</button>
                 <!-- информация о учеников -->
                 <div class="pupils">
                     <div class="pup-text">
@@ -224,79 +279,93 @@
         </div>
     </div>
 </section>
-<section class="page-6" >
-<!-- блок AOS -->
+<section class="page-6">
+    <!-- блок AOS -->
     <div class="aos-loader">
         <img src="./img/load-icon3.png" alt="">
         <h3>Программа обучения</h3>
         <p>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
     </div>
-    <div class="aos-block"id="rasp">
-<div class="aos-wraper">
-<div class="aos-items-left">
-    <div class="aos-items">
-    <span>Неделя №1</span>
-    <div class="aos-text-line">
-    <p>Красивая часть курса,
-        которая помогает в успехе</p>
-    <span></span>
-</div>
-</div>
-<div class="aos-items">
-    <span>Неделя №3</span>
-    <div class="aos-text-line">
-        <p>Красивая часть курса,
-            которая помогает в успехе</p>
-        <span></span>
-    </div>
-</div>
-<div class="aos-items">
-    <span>Неделя №5</span>
-    <div class="aos-text-line">
-        <p>Красивая часть курса,
-            которая помогает в успехе</p>
-        <span></span>
-    </div>
-</div>
-<div class="aos-items">
-    <span>Неделя №7</span>
-    <div class="aos-text-line">
-        <p>Красивая часть курса,
-            которая помогает в успехе</p>
-        <span></span>
-    </div>
-</div>
-</div>
-<div class="aos-line"></div>
-<div class="aos-items-right">
-    <div class="aos-items">
-    <span>Неделя №2</span>
-    <div class="aos-text-line2">
-    <p>Красивая часть курса,
-        которая помогает в успехе</p>
-    <span></span>
-</div>
-</div>
-<div class="aos-items">
-    <span>Неделя №4</span>
-    <div class="aos-text-line2">
-        <p>Красивая часть курса,
-            которая помогает в успехе</p>
-        <span></span>
-    </div>
-</div>
-<div class="aos-items">
-    <span>Неделя №6</span>
-    <div class="aos-text-line2">
-        <p>Красивая часть курса,
-            которая помогает в успехе</p>
-        <span></span>
-    </div>
-</div>
-</div>
-</div>
-    </div>
-</section>
+    <div class="aos-block" id="rasp">
+        <div class="aos-wraper">
+            <div class="aos-items-left">
+                <div class="aos-items">
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <span>Неделя №1</span>
+                        <div class="aos-text-line">
+                            <p>Красивая часть курса,
+                                которая помогает в успехе</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-items">
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <span>Неделя №3</span>
+                        <div class="aos-text-line">
+                            <p>Красивая часть курса,
+                                которая помогает в успехе</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-items">
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <span>Неделя №5</span>
+                        <div class="aos-text-line">
+                            <p>Красивая часть курса,
+                                которая помогает в успехе</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-items">
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <span>Неделя №7</span>
+                        <div class="aos-text-line">
+                            <p>Красивая часть курса,
+                                которая помогает в успехе</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aos-line"></div>
+            <div class="aos-items-right">
+                <div class="aos-items">
+                    <div data-aos="fade-left" data-aos-duration="2000">
+                        <span>Неделя №2</span>
+                        <div class="aos-text-line2">
+                            <p>Красивая часть курса,
+                                которая помогает в успехе</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-items">
+                    <div data-aos="fade-left" data-aos-duration="2000">
+                        <span>Неделя №4</span>
+                        <div class="aos-text-line2">
+                            <p>Красивая часть курса,
+                                которая помогает в успехе</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-items">
+                    <div data-aos="fade-left" data-aos-duration="2000">
+                        <span>Неделя №6</span>
+                        <div class="aos-text-line2">
+                            <p>Красивая часть курса,
+                                которая помогает в успехе</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 <section class="page-7" id="teach">
 <div class="teach-load">
     <img src="./img/load-icon4.png" alt="">
@@ -401,6 +470,10 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
