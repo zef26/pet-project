@@ -23,7 +23,6 @@ new Swiper(".swiper", {
   //Drag and drop
   let drag_and_drop = ()=>{
     let zone = document.querySelectorAll('.zone')
-    let block = document.querySelector('#el')
     let children;
     let prevs;
     function dr_st() {
@@ -72,4 +71,3 @@ for (let anchor of anchors) {
     })
   })
 }
-//[p]
