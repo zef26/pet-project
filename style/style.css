@@ -729,3 +729,7 @@ border: none;
     color: white;
     text-decoration: underline;
 }
+span{
+    color: white;
+    font-size: 24px;
+}
