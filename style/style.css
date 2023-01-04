@@ -21,6 +21,7 @@ body {
 
 button {
     cursor: pointer;
+    transition: 300ms;
 }
 
 .page-1 {
@@ -55,6 +56,7 @@ nav {
 
 .hrefs a {
     color: white;
+    transition: 300ms;
 }
 
 .logo {
@@ -265,6 +267,9 @@ h1 {
     height: 80px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     margin-top: 20px;
+    display: flex;
+    
+    align-items: center;
 }
 
 .item-tx p {
@@ -541,6 +546,7 @@ h1 {
 }
 
 .swiper {
+height: 500px;
     margin-top: 113px;
 }
 
@@ -560,8 +566,11 @@ h1 {
 
 .sw-block img {
     width: 190px;
+    transition: 300ms;
 }
-
+.sw-block img:hover{
+    transform: scale(1.01);
+}
 .sw-block p {
     opacity: 0.8;
     margin-top: 15px;
@@ -659,6 +668,7 @@ footer button {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: 300ms;
 }
 
 ::-webkit-scrollbar {
@@ -945,5 +955,61 @@ span {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+.hrefs a:hover{
+    color: #c121c4;
+}
+button:hover{
+    box-shadow: 0 0 5px 2px #fa47fd;
+    transform: scale(1.01);
+}
+.krug:hover{
+    transform: scale(1.1);
+}
+.hvr{
+    background-color:white;
+    opacity: 0.3;
+    width: 50px;
+    height: 100%;
+    box-shadow: 0 0 8px 3px black;
+    animation: low 10s linear infinite;
+   
+}
+@keyframes low {
+    0%{
+        transform: translateX(0);
+    }
+   
+    10%{
+        transform: translateX(324px) ;
+        height: 60px;
+    }
+    20%{
+        transform: translateX(648px) ;
+        height: 30px;
+    }
+    30%{
+        transform: translateX(973px) ;
+        height: 10px;
+    }
+    40%{
+transform: translate(1250px);
+height: 5px;
+    }
+    50%{
+        transform: translateX(973px) ;
+        height: 10px;
+    }
+    60%{
+        transform: translateX(648px) ;
+        height: 30px;
+    }
+    80%{
+        transform: translateX(324px) ;
+        height: 60px;
+    }
+    100%{
+        transform: translateX(0);
     }
 }
