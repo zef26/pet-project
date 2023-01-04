@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,67 +8,66 @@
     <title>Первый курс по компьютерной сборке</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./img/logo.png">
 </head>
+
 <body>
-<!-- модалка хидера -->
-<div class="modal-window">
-    <div class="window">
-        
-        <div class="back-color">
-            <div class="cross">
-            <img src="./img/cross.png" alt="" width="25px">
-        </div>
-            <form action="#">
-                <label >
-                    <p>Логин</p>
-                <input type="text" required minlength="6" maxlength="16">
-            </label>
-            <label >
-                <p>Пароль</p>
-            <input type="password" minlength="8" maxlength="14">
-        </label>
-                <button>Войти</button>
-                
-            </form>
-        </div>
-    </div>
-</div>
-<!-- модалка  -->
-<div class="mw2">
-    <div class="window2">
-        
-        <div class="back-color2">
-            <div class="cross2">
-            <img src="./img/cross.png" alt="" width="25px" >
-        </div>
-            <form action="#">
-                <label >
-                    <p>Имя</p>
-                <input type="text" required minlength="2" maxlength="16">
-            </label>
-            <label >
-                <p>Номер телефона</p>
-            <input type="number" minlength="8" maxlength="14" >
-        </label>
-        <label >
-            <p>Электронная почта</p>
-        <input type="email" required minlength="8" maxlength="14">
-    </label>
-    <div class="md-btns">
-                <button>Войти</button>
-                <button>Получить консультацию</button>
+    <!-- модалка хидера -->
+    <div class="modal-window" >
+        <div class="window">
+
+            <div class="back-color">
+                <div class="cross">
+                    <img src="./img/cross.png" alt="" width="25px">
+                </div>
+                <form action="#">
+                    <label>
+                        <p>Логин</p>
+                        <input type="text" required minlength="6" maxlength="16">
+                    </label>
+                    <label>
+                        <p>Пароль</p>
+                        <input type="password" minlength="8" maxlength="14">
+                    </label>
+                    <button>Войти</button>
+
+                </form>
             </div>
-            <p>Нажимая кнопку, принимаю условия <a href="#">политики</a> и <a href="#">пользовательского соглашения</a></p>
-            </form>
         </div>
     </div>
-</div>
+    <!-- модалка  -->
+    <div class="mw2">
+        <div class="window2">
+
+            <div class="back-color2">
+                <div class="cross2">
+                    <img src="./img/cross.png" alt="" width="25px">
+                </div>
+                <form action="#">
+                    <label>
+                        <p>Имя</p>
+                        <input type="text" required minlength="2" maxlength="16">
+                    </label>
+                    <label>
+                        <p>Номер телефона</p>
+                        <input type="number" minlength="8" maxlength="14">
+                    </label>
+                    <label>
+                        <p>Электронная почта</p>
+                        <input type="email" required minlength="8" maxlength="14">
+                    </label>
+                    <div class="md-btns">
+                        <button>Войти</button>
+                        <button>Получить консультацию</button>
+                    </div>
+                    <p>Нажимая кнопку, принимаю условия <a href="#">политики</a> и <a href="#">пользовательского
+                            соглашения</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- первая секция -->
     <section class="page-1">
@@ -76,9 +76,14 @@
             <!-- контейнер-хидера -->
             <div class="header-container">
                 <nav>
+
                     <div class="logo">
                         <img src="./img/logo.png" alt="">
                     </div>
+
+
+
+
                     <!-- ссылки-хидера -->
                     <div class="hrefs">
                         <a href="#glav">Главная</a>
@@ -88,21 +93,53 @@
                         <a href="#">Рассылка</a>
                         <a href="#kont">Контакты</a>
                     </div>
+
+
+
                     <!-- Кнопка для модалки -->
                     <div class="btn-modal">
                         <button class="btn-modal-win">Зайти в кабинет</button>
                     </div>
+
+                    <!-- Мобильная версия меню -->
+                    <div class="mobile_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <!-- Бургер меню -->
+                    <div class="burger">
+                        <video src="./img/bgc.mp4" autoplay loop></video>
+                        <div class="burger_menu">
+                            <div class="mobile_menu_back">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <a href="#glav" onmouseover="bgc_change()" onmouseout="no_bgc()">Главная</a>
+                            <a href="#course" onmouseover="bgc_change()" onmouseout="no_bgc()">Курсы</a>
+                            <a href="#rasp" onmouseover="bgc_change()" onmouseout="no_bgc()">Расписание</a>
+                            <a href="#teach" onmouseover="bgc_change()" onmouseout="no_bgc()">Преподаватели</a>
+                            <a href="#" onmouseover="bgc_change()" onmouseout="no_bgc()">Рассылка</a>
+                            <a href="#kont" onmouseover="bgc_change()" onmouseout="no_bgc()">Контакты</a>
+                            <audio src="./img/bgc_music.mp3" id="bgc_music"></audio>
+                            <audio src="./img/hover_btn.mp3" id="btn_e1"></audio>
+                        </div>
+                        
+                    </div>
+
+
                 </nav>
             </div>
         </header>
         <!-- Контейнер -->
-        <div class="container">
+        <div class="container_home">
             <h1>Первый курс <br>
                 по компьютерной сборке</h1>
             <!-- таймер -->
             <div class="timer">
                 <div class="data">
-                    <span class="numb" id="days">  
+                    <span class="numb" id="days">
                     </span>
                     <div class="time">
                         <p>Дней</p>
@@ -110,7 +147,7 @@
                 </div>
                 <div class="data">
                     <span class="numb" id="hours">
-                        
+
                     </span>
                     <div class="time">
                         <p>Часов</p>
@@ -118,7 +155,7 @@
                 </div>
                 <div class="data">
                     <span class="numb" id="minutes">
-                       
+
                     </span>
                     <div class="time">
                         <p>Минут</p>
@@ -126,7 +163,7 @@
                 </div>
                 <div class="data">
                     <span class="numb" id="seconds">
-                       
+
                     </span>
                     <div class="time">
                         <p>Секунд</p>
@@ -147,8 +184,8 @@
                         <p>Успешно закончили курс:</p>
                     </div>
                     <div class="pup-number">
-                        <p>200</p>
-                        <p>190</p>
+                        <div class="counter" data-to="200" data-stop="0"><p>200</p></div>
+                        <div class="counter" data-to="190" data-stop="0"><p>190</p></div>
                     </div>
                 </div>
                 <!-- шкала и ее подробности -->
@@ -178,300 +215,482 @@
             <!-- текст с права -->
             <div class="wht-doing">
                 <h3>Чем мы занимаемся?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue
+                    in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et
+                    neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet
+                    fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus
+                    risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi,
+                    lobortis. </p>
             </div>
         </section>
-   <!-- 3 секция -->
+        <!-- 3 секция -->
         <section class="page-3" id="course">
             <!-- мини лоадер -->
             <div class="load-text">
-            <img src="./img/load-icon.png" alt="">
-            <p>Быстрый старт</p>
-        </div>
+                <img src="./img/load-icon.png" alt="">
+                <p>Быстрый старт</p>
+            </div>
             <p class="pg3-text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
             <!-- боксы в виде шприца -->
-<div class="wrap">
-    <div class="wrap-txt">
-        <p>100%</p>
-         <p>75%</p>
-         <p>50%</p>
-         <p>Итог</p>
-    </div>
-    
-            <div class="item">
-                <div class="block"></div>  
-       
-               
-                <div class="block bl-2"></div>   
-     
-                
-                <div class="block bl-3"></div>     
-       
-                 
-                <div class="block bl-4"></div> 
-            </div>
-</div>
+            <div class="wrap">
+                <div class="wrap-txt">
+                    <p>100%</p>
+                    <p>75%</p>
+                    <p>50%</p>
+                    <p>Итог</p>
+                </div>
 
-<!-- текс снизу боксов  -->
-<div class="item-tx">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-</div>
-        </section>
-<!-- 4 ая секция -->
-<section class="page-4">
-<h3>Получите профессию прямо сейчас</h3>
-<!-- о курсе -->
-<div class="about-us">
-<div class="box">
-    <img src="./img/komp.png" alt="">
-    <h4>Только практические
-        навыки в работе</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-</div>
-<div class="box">
-    <img src="./img/usb.png" alt="">
-    <h4>Работа на самом
-        современном оборудовании</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-</div>
-<div class="box">
-    <img src="./img/usb2.png" alt="">
-    <h4>Сертификация
-        по окончании обучения</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-</div>
-</div>
-</section>
-<section class="page-5">
-    <div class="part-load">
-        <img src="./img/load-icon-2.png" alt="">
-        <h3>Партнеры - топовые бренды</h3>
-    </div>
-<!-- логотипы -->
-    <div class="vidiki">
-        <div class="wrapers zone">
-            <img src="./img/msi.png" alt="" >
-        </div>
-        <div class="wrapers zone">
-            <img src="./img/nvidia.png" alt="" >
-        </div>
-        <div class="wrapers zone">
-            <img src="./img/toshiba.png" alt="">
-        </div>
-        <div class="wrapers zone">
-            <img src="./img/lenovo.png" alt="">
-        </div>
-        <div class="wrapers zone">
-            <img src="./img/samsung.png" alt="" >
-        </div>
-        <div class="wrapers zone">
-            <img src="./img/dell.png" alt="" >
-        </div>
-        <div class="wrapers zone">
-            <img src="./img/predator.png" alt="" >
-        </div>
-        <div class="wrapers zone">
-            <img src="./img/intel.png" alt="" >
-        </div>
-    </div>
-</section>
-<section class="page-6">
-    <!-- блок AOS -->
-    <div class="aos-loader">
-        <img src="./img/load-icon3.png" alt="">
-        <h3>Программа обучения</h3>
-        <p>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
-    </div>
-    <div class="aos-block" id="rasp">
-        <div class="aos-wraper">
-            <div class="aos-items-left">
-                <div class="aos-items">
-                    <div data-aos="fade-right" data-aos-duration="2000">
-                        <span>Неделя №1</span>
-                        <div class="aos-text-line">
-                            <p>Красивая часть курса,
-                                которая помогает в успехе</p>
-                            <span></span>
-                        </div>
+                <div class="item">
+                    <div class="block">
+                        <div class="hvr"></div>
                     </div>
-                </div>
-                <div class="aos-items">
-                    <div data-aos="fade-right" data-aos-duration="2000">
-                        <span>Неделя №3</span>
-                        <div class="aos-text-line">
-                            <p>Красивая часть курса,
-                                которая помогает в успехе</p>
-                            <span></span>
-                        </div>
+
+
+                    <div class="block bl-2">
+                        
                     </div>
-                </div>
-                <div class="aos-items">
-                    <div data-aos="fade-right" data-aos-duration="2000">
-                        <span>Неделя №5</span>
-                        <div class="aos-text-line">
-                            <p>Красивая часть курса,
-                                которая помогает в успехе</p>
-                            <span></span>
-                        </div>
+
+
+                    <div class="block bl-3">
+                        
                     </div>
-                </div>
-                <div class="aos-items">
-                    <div data-aos="fade-right" data-aos-duration="2000">
-                        <span>Неделя №7</span>
-                        <div class="aos-text-line">
-                            <p>Красивая часть курса,
-                                которая помогает в успехе</p>
-                            <span></span>
-                        </div>
+
+
+                    <div class="block bl-4">
+                        
                     </div>
                 </div>
             </div>
-            <div class="aos-line"></div>
-            <div class="aos-items-right">
-                <div class="aos-items">
-                    <div data-aos="fade-left" data-aos-duration="2000">
-                        <span>Неделя №2</span>
-                        <div class="aos-text-line2">
-                            <p>Красивая часть курса,
-                                которая помогает в успехе</p>
-                            <span></span>
+
+            <!-- текс снизу боксов  -->
+            <div class="item-tx">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+
+            <div class="wrap_mobile">
+                <div class="item_mobile">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="block_mobile">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam libero itaque voluptatem,
+                            quidem
+                            maxime impedit officiis minus amet, molestias sequi, fugit optio corporis. Asperiores
+                            voluptates, voluptatibus illo dolores magni mollitia?</p>
+                    </div>
+                </div>
+                <div class="item_mobile">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="block_mobile">
+                            <p>75%</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam libero itaque voluptatem,
+                            quidem
+                            maxime impedit officiis minus amet, molestias sequi, fugit optio corporis. Asperiores
+                            voluptates, voluptatibus illo dolores magni mollitia?</p>
+                    </div>
+                </div>
+                <div class="item_mobile">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="block_mobile">
+                            <p>50%</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam libero itaque voluptatem,
+                            quidem
+                            maxime impedit officiis minus amet, molestias sequi, fugit optio corporis. Asperiores
+                            voluptates, voluptatibus illo dolores magni mollitia?</p>
+                    </div>
+                </div>
+                <div class="item_mobile">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="block_mobile">
+                            <p>Итог</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam libero itaque voluptatem,
+                            quidem
+                            maxime impedit officiis minus amet, molestias sequi, fugit optio corporis. Asperiores
+                            voluptates, voluptatibus illo dolores magni mollitia?</p>
+                    </div>
+                </div>
+            </div>
+   
+
+    </section>
+    <!-- 4 ая секция -->
+    <section class="page-4">
+        <h3>Получите профессию прямо сейчас</h3>
+        <!-- о курсе -->
+        <div class="about-us">
+            <div class="box">
+                <img src="./img/komp.png" alt="" data-aos="aos3">
+                <h4>Только практические
+                    навыки в работе</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="box">
+                <img src="./img/usb.png" alt="" data-aos="aos3">
+                <h4>Работа на самом
+                    современном оборудовании</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="box">
+                <img src="./img/usb2.png" alt="" data-aos="aos3">
+                <h4>Сертификация
+                    по окончании обучения</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+        </div>
+    </section>
+    <section class="page-5">
+        <div class="part-load">
+            <img src="./img/load-icon-2.png" alt="">
+            <h3>Партнеры - топовые бренды</h3>
+        </div>
+        <!-- логотипы -->
+        <div class="vidiki">
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/msi.png" alt="">
+            </div>
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/nvidia.png" alt="">
+            </div>
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/toshiba.png" alt="">
+            </div>
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/lenovo.png" alt="">
+            </div>
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/samsung.png" alt="">
+            </div>
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/dell.png" alt="">
+            </div>
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/predator.png" alt="">
+            </div>
+            <div class="wrapers zone" data-aos="flip-down">
+                <img src="./img/intel.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="page-6">
+        <!-- блок AOS -->
+        <div class="aos-loader">
+            <img src="./img/load-icon3.png" alt="">
+            <h3>Программа обучения</h3>
+            <p>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+        </div>
+        <div class="aos-block" id="rasp">
+            <div class="aos-wraper">
+                <div class="aos-items-left">
+                    <div class="aos-items">
+                        <div data-aos="fade-right" data-aos-duration="2000">
+                            <span>Неделя №1</span>
+                            <div class="aos-text-line">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-right" data-aos-duration="2000">
+                            <span>Неделя №3</span>
+                            <div class="aos-text-line">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-right" data-aos-duration="2000">
+                            <span>Неделя №5</span>
+                            <div class="aos-text-line">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-right" data-aos-duration="2000">
+                            <span>Неделя №7</span>
+                            <div class="aos-text-line">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="aos-items">
-                    <div data-aos="fade-left" data-aos-duration="2000">
-                        <span>Неделя №4</span>
-                        <div class="aos-text-line2">
-                            <p>Красивая часть курса,
-                                которая помогает в успехе</p>
-                            <span></span>
+                <div class="aos-line"></div>
+                <div class="aos-items-right">
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №2</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="aos-items">
-                    <div data-aos="fade-left" data-aos-duration="2000">
-                        <span>Неделя №6</span>
-                        <div class="aos-text-line2">
-                            <p>Красивая часть курса,
-                                которая помогает в успехе</p>
-                                    <span></span>
-                                </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №4</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №6</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-<section class="page-7" id="teach">
-<div class="teach-load">
-    <img src="./img/load-icon4.png" alt="">
-    <h3>Ваши преподаватели</h3>
+
+
+            <div class="aos-wraper aos_mobile">
+                <div class="aos-line"></div>
+
+
+                <div class="aos-items-right">
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №1</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №2</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №3</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №4</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №5</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №6</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aos-items">
+                        <div data-aos="fade-left" data-aos-duration="2000">
+                            <span>Неделя №7</span>
+                            <div class="aos-text-line2">
+                                <p>Красивая часть курса,
+                                    которая помогает в успехе</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-7" id="teach">
+        <div class="teach-load">
+            <img src="./img/load-icon4.png" alt="">
+            <h3>Ваши преподаватели</h3>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="sw-block">
+                        <img src="./img/teach1.png" alt="">
+                        <h3>Дмитрий Иванов</h3>
+                        <p>Специалист по видеокартам</p>
+                        <button>Биография</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sw-block">
+                        <img src="./img/teach2.png" alt="">
+                        <h3>Дмитрий Иванов</h3>
+                        <p>Специалист по видеокартам</p>
+                        <button>Биография</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sw-block">
+                        <img src="./img/teach3.png" alt="">
+                        <h3>Дмитрий Иванов</h3>
+                        <p>Специалист по видеокартам</p>
+                        <button>Биография</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sw-block">
+                        <img src="./img/saske-round.png" alt="">
+                        <h3>Uchiha Sasuke</h3>
+                        <p>Бэк-энд разработчик</p>
+                        <button>Биография</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sw-block">
+                        <img src="./img/naruto-round (1).png" alt="">
+                        <h3>Naruto Uzumaki</h3>
+                        <p>Фронт-энд разработчик</p>
+                        <button>Биография</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
 </div>
-<!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <div class="sw-block">
-            <img src="./img/teach1.png" alt="">
-            <h3>Дмитрий Иванов</h3>
-            <p>Специалист по видеокартам</p>
-            <button>Биография</button>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="sw-block">
-            <img src="./img/teach2.png" alt="">
-            <h3>Дмитрий Иванов</h3>
-            <p>Специалист по видеокартам</p>
-            <button>Биография</button>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="sw-block">
-            <img src="./img/teach3.png" alt="">
-            <h3>Дмитрий Иванов</h3>
-            <p>Специалист по видеокартам</p>
-            <button>Биография</button>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="sw-block">
-            <img src="./img/saske-round.png" alt="">
-            <h3>Uchiha Sasuke</h3>
-            <p>Бэк-энд разработчик</p>
-            <button>Биография</button>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="sw-block">
-            <img src="./img/naruto-round (1).png" alt="">
-            <h3>Naruto Uzumaki</h3>
-            <p>Фронт-энд разработчик</p>
-            <button>Биография</button>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</section>
-<footer id="kont">
-    <h3>Статьи каждую неделю</h3>
-    <p>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
-    <form action="">
-        <input type="email" required  min="8" placeholder="Email"><button>Подписаться</button>
-    </form>
-    <div class="soc-logo">
-        <div class="krug">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_10112_31)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3625 14.7577C21.3625 14.7577 23.3029 16.6741 23.7829 17.5609C23.7922 17.5736 23.7995 17.5878 23.8045 17.6029C24.0001 17.9305 24.0481 18.1873 23.9521 18.3769C23.7901 18.6901 23.2417 18.8473 23.0557 18.8605H19.6261C19.3873 18.8605 18.8905 18.7981 18.2857 18.3805C17.8237 18.0577 17.3641 17.5261 16.9189 17.0065C16.2541 16.2349 15.6793 15.5653 15.0973 15.5653C15.0238 15.5651 14.9508 15.5773 14.8813 15.6013C14.4409 15.7405 13.8817 16.3681 13.8817 18.0397C13.8817 18.5629 13.4689 18.8605 13.1797 18.8605H11.6089C11.0737 18.8605 8.28731 18.6733 5.81651 16.0681C2.78891 12.8785 0.0697081 6.48005 0.0433081 6.42365C-0.125892 6.00965 0.229308 5.78405 0.613308 5.78405H4.07651C4.54091 5.78405 4.69211 6.06485 4.79771 6.31685C4.92011 6.60605 5.37371 7.76285 6.11771 9.06245C7.32251 11.1768 8.06291 12.0373 8.65451 12.0373C8.76566 12.0376 8.87492 12.0086 8.97131 11.9533C9.74411 11.5285 9.60011 8.76845 9.56411 8.19965C9.56411 8.08925 9.56291 6.96725 9.16691 6.42485C8.88371 6.03605 8.40131 5.88485 8.10971 5.82965C8.18771 5.71685 8.35331 5.54405 8.56571 5.44205C9.09491 5.17805 10.0513 5.13965 11.0005 5.13965H11.5273C12.5569 5.15405 12.8233 5.22005 13.1977 5.31485C13.9513 5.49485 13.9657 5.98325 13.8997 7.64645C13.8805 8.12165 13.8601 8.65685 13.8601 9.28685C13.8601 9.42125 13.8541 9.57125 13.8541 9.72365C13.8313 10.5768 13.8013 11.5381 14.4037 11.9329C14.4818 11.9815 14.5721 12.0073 14.6641 12.0072C14.8729 12.0072 15.4981 12.0072 17.1937 9.09725C17.9377 7.81205 18.5137 6.29645 18.5533 6.18245C18.5869 6.11885 18.6877 5.94005 18.8101 5.86805C18.8972 5.82172 18.9947 5.79858 19.0933 5.80085H23.1673C23.6113 5.80085 23.9125 5.86805 23.9713 6.03605C24.0697 6.30845 23.9521 7.14005 22.0921 9.65525C21.7789 10.074 21.5041 10.4365 21.2629 10.7533C19.5769 12.9661 19.5769 13.0777 21.3625 14.7577Z" fill="white"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_10112_31">
-                <rect width="24" height="24" fill="white"/>
-                </clipPath>
-                </defs>
+    <footer id="kont">
+        <h3>Статьи каждую неделю</h3>
+        <p>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+        <form action="">
+            <input type="email" required min="8" placeholder="Email"><button>Подписаться</button>
+        </form>
+        <div class="soc-logo">
+            <a href="#">
+            <div class="krug">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_10112_31)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.3625 14.7577C21.3625 14.7577 23.3029 16.6741 23.7829 17.5609C23.7922 17.5736 23.7995 17.5878 23.8045 17.6029C24.0001 17.9305 24.0481 18.1873 23.9521 18.3769C23.7901 18.6901 23.2417 18.8473 23.0557 18.8605H19.6261C19.3873 18.8605 18.8905 18.7981 18.2857 18.3805C17.8237 18.0577 17.3641 17.5261 16.9189 17.0065C16.2541 16.2349 15.6793 15.5653 15.0973 15.5653C15.0238 15.5651 14.9508 15.5773 14.8813 15.6013C14.4409 15.7405 13.8817 16.3681 13.8817 18.0397C13.8817 18.5629 13.4689 18.8605 13.1797 18.8605H11.6089C11.0737 18.8605 8.28731 18.6733 5.81651 16.0681C2.78891 12.8785 0.0697081 6.48005 0.0433081 6.42365C-0.125892 6.00965 0.229308 5.78405 0.613308 5.78405H4.07651C4.54091 5.78405 4.69211 6.06485 4.79771 6.31685C4.92011 6.60605 5.37371 7.76285 6.11771 9.06245C7.32251 11.1768 8.06291 12.0373 8.65451 12.0373C8.76566 12.0376 8.87492 12.0086 8.97131 11.9533C9.74411 11.5285 9.60011 8.76845 9.56411 8.19965C9.56411 8.08925 9.56291 6.96725 9.16691 6.42485C8.88371 6.03605 8.40131 5.88485 8.10971 5.82965C8.18771 5.71685 8.35331 5.54405 8.56571 5.44205C9.09491 5.17805 10.0513 5.13965 11.0005 5.13965H11.5273C12.5569 5.15405 12.8233 5.22005 13.1977 5.31485C13.9513 5.49485 13.9657 5.98325 13.8997 7.64645C13.8805 8.12165 13.8601 8.65685 13.8601 9.28685C13.8601 9.42125 13.8541 9.57125 13.8541 9.72365C13.8313 10.5768 13.8013 11.5381 14.4037 11.9329C14.4818 11.9815 14.5721 12.0073 14.6641 12.0072C14.8729 12.0072 15.4981 12.0072 17.1937 9.09725C17.9377 7.81205 18.5137 6.29645 18.5533 6.18245C18.5869 6.11885 18.6877 5.94005 18.8101 5.86805C18.8972 5.82172 18.9947 5.79858 19.0933 5.80085H23.1673C23.6113 5.80085 23.9125 5.86805 23.9713 6.03605C24.0697 6.30845 23.9521 7.14005 22.0921 9.65525C21.7789 10.074 21.5041 10.4365 21.2629 10.7533C19.5769 12.9661 19.5769 13.0777 21.3625 14.7577Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_10112_31">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
                 </svg>
-        </div>
-        <div class="krug">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.0576 6.94539C21.9381 6.50142 21.7041 6.09662 21.3789 5.77152C21.0538 5.44641 20.649 5.21239 20.2051 5.09289C18.5701 4.65039 12.0001 4.65039 12.0001 4.65039C12.0001 4.65039 5.43008 4.65039 3.79508 5.09289C3.35111 5.21239 2.94631 5.44641 2.6212 5.77152C2.29609 6.09662 2.06208 6.50142 1.94258 6.94539C1.63729 8.61284 1.48914 10.3053 1.50008 12.0004C1.48914 13.6955 1.63729 15.3879 1.94258 17.0554C2.06208 17.4994 2.29609 17.9042 2.6212 18.2293C2.94631 18.5544 3.35111 18.7884 3.79508 18.9079C5.43008 19.3504 12.0001 19.3504 12.0001 19.3504C12.0001 19.3504 18.5701 19.3504 20.2051 18.9079C20.649 18.7884 21.0538 18.5544 21.3789 18.2293C21.7041 17.9042 21.9381 17.4994 22.0576 17.0554C22.3629 15.3879 22.511 13.6955 22.5001 12.0004C22.511 10.3053 22.3629 8.61284 22.0576 6.94539ZM9.90008 15.1504V8.85039L15.3526 12.0004L9.90008 15.1504Z" fill="white"/>
+            </div>
+        </a>
+            <a href="#">
+            <div class="krug">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22.0576 6.94539C21.9381 6.50142 21.7041 6.09662 21.3789 5.77152C21.0538 5.44641 20.649 5.21239 20.2051 5.09289C18.5701 4.65039 12.0001 4.65039 12.0001 4.65039C12.0001 4.65039 5.43008 4.65039 3.79508 5.09289C3.35111 5.21239 2.94631 5.44641 2.6212 5.77152C2.29609 6.09662 2.06208 6.50142 1.94258 6.94539C1.63729 8.61284 1.48914 10.3053 1.50008 12.0004C1.48914 13.6955 1.63729 15.3879 1.94258 17.0554C2.06208 17.4994 2.29609 17.9042 2.6212 18.2293C2.94631 18.5544 3.35111 18.7884 3.79508 18.9079C5.43008 19.3504 12.0001 19.3504 12.0001 19.3504C12.0001 19.3504 18.5701 19.3504 20.2051 18.9079C20.649 18.7884 21.0538 18.5544 21.3789 18.2293C21.7041 17.9042 21.9381 17.4994 22.0576 17.0554C22.3629 15.3879 22.511 13.6955 22.5001 12.0004C22.511 10.3053 22.3629 8.61284 22.0576 6.94539ZM9.90008 15.1504V8.85039L15.3526 12.0004L9.90008 15.1504Z"
+                        fill="white" />
                 </svg>
-                
-        </div>
-        <div class="krug">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.397 20.9972V12.8012H16.162L16.573 9.59217H13.397V7.54817C13.397 6.62217 13.655 5.98817 14.984 5.98817H16.668V3.12717C15.8487 3.03936 15.0251 2.99696 14.201 3.00017C11.757 3.00017 10.079 4.49217 10.079 7.23117V9.58617H7.33203V12.7952H10.085V20.9972H13.397Z" fill="white"/>
+
+            </div>
+        </a>
+        <a href="#">
+            <div class="krug">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.397 20.9972V12.8012H16.162L16.573 9.59217H13.397V7.54817C13.397 6.62217 13.655 5.98817 14.984 5.98817H16.668V3.12717C15.8487 3.03936 15.0251 2.99696 14.201 3.00017C11.757 3.00017 10.079 4.49217 10.079 7.23117V9.58617H7.33203V12.7952H10.085V20.9972H13.397Z"
+                        fill="white" />
                 </svg>
-        </div>
-        <div class="krug">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_10112_47)">
-                <path d="M16.5 0H7.5C3.3585 0 0 3.3585 0 7.5V16.5C0 20.6415 3.3585 24 7.5 24H16.5C20.6415 24 24 20.6415 24 16.5V7.5C24 3.3585 20.6415 0 16.5 0ZM21.75 16.5C21.75 19.395 19.395 21.75 16.5 21.75H7.5C4.605 21.75 2.25 19.395 2.25 16.5V7.5C2.25 4.605 4.605 2.25 7.5 2.25H16.5C19.395 2.25 21.75 4.605 21.75 7.5V16.5Z" fill="white"/>
-                <path d="M12 6C8.6865 6 6 8.6865 6 12C6 15.3135 8.6865 18 12 18C15.3135 18 18 15.3135 18 12C18 8.6865 15.3135 6 12 6ZM12 15.75C9.933 15.75 8.25 14.067 8.25 12C8.25 9.9315 9.933 8.25 12 8.25C14.067 8.25 15.75 9.9315 15.75 12C15.75 14.067 14.067 15.75 12 15.75Z" fill="white"/>
-                <path d="M18.4479 6.34997C18.8895 6.34997 19.2474 5.99203 19.2474 5.55048C19.2474 5.10892 18.8895 4.75098 18.4479 4.75098C18.0064 4.75098 17.6484 5.10892 17.6484 5.55048C17.6484 5.99203 18.0064 6.34997 18.4479 6.34997Z" fill="white"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_10112_47">
-                <rect width="24" height="24" fill="white"/>
-                </clipPath>
-                </defs>
+            </div>
+        </a>
+        <a href="#">
+            <div class="krug">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_10112_47)">
+                        <path
+                            d="M16.5 0H7.5C3.3585 0 0 3.3585 0 7.5V16.5C0 20.6415 3.3585 24 7.5 24H16.5C20.6415 24 24 20.6415 24 16.5V7.5C24 3.3585 20.6415 0 16.5 0ZM21.75 16.5C21.75 19.395 19.395 21.75 16.5 21.75H7.5C4.605 21.75 2.25 19.395 2.25 16.5V7.5C2.25 4.605 4.605 2.25 7.5 2.25H16.5C19.395 2.25 21.75 4.605 21.75 7.5V16.5Z"
+                            fill="white" />
+                        <path
+                            d="M12 6C8.6865 6 6 8.6865 6 12C6 15.3135 8.6865 18 12 18C15.3135 18 18 15.3135 18 12C18 8.6865 15.3135 6 12 6ZM12 15.75C9.933 15.75 8.25 14.067 8.25 12C8.25 9.9315 9.933 8.25 12 8.25C14.067 8.25 15.75 9.9315 15.75 12C15.75 14.067 14.067 15.75 12 15.75Z"
+                            fill="white" />
+                        <path
+                            d="M18.4479 6.34997C18.8895 6.34997 19.2474 5.99203 19.2474 5.55048C19.2474 5.10892 18.8895 4.75098 18.4479 4.75098C18.0064 4.75098 17.6484 5.10892 17.6484 5.55048C17.6484 5.99203 18.0064 6.34997 18.4479 6.34997Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_10112_47">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
                 </svg>
+            </div>
+        </a>
         </div>
-    </div>
-</footer>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1200
+        });
     </script>
 </body>
 
