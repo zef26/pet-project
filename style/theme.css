@@ -1,0 +1,266 @@
+body {
+    background: rgb(200, 154, 252);
+    background: linear-gradient(90deg, rgba(200, 154, 252, 1) 0%, rgba(124, 106, 250, 1) 100%);
+}
+
+h1 {
+    color: #000000;
+}
+
+.btn-modal button {
+    background-image: none;
+    background-color: #121212;
+}
+
+.page-1 {
+    background-image: none;
+}
+
+.wht-doing h3 {
+    color: black;
+}
+
+.wht-doing p {
+    color: black;
+}
+
+.load-text p {
+    color: black;
+    
+}
+
+.pg3-text {
+    opacity: 1;
+    color: black;
+}
+
+.block_mobile {
+    background: linear-gradient(94.26deg, #1e1e1e 9.51%, #000000 90.23%);
+}
+
+.item_mobile:nth-child(2) .block_mobile {
+    background: linear-gradient(-4.26deg, #1e1e1e 9.51%, #000000 90.23%);
+}
+
+.item_mobile:nth-child(4) .block_mobile {
+    background: linear-gradient(-4.26deg, #1e1e1e 9.51%, #000000 90.23%);
+}
+
+.item_mobile p {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.block_mobile p {
+    color: white;
+}
+/* 
+.wrapers {
+    background-color: #1e1e1e;
+    
+} */
+
+.page-4 h3 {
+    color: #000000;
+}
+
+.box h4 {
+    color: #000000;
+}
+
+.box p {
+    color: #000000;
+    opacity: 1;
+}
+
+.part-load h3 {
+    color: #000000;
+}
+
+/* .wrapers img {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+} */
+
+.box img {
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.aos-loader h3 {
+    color: #000000;
+}
+
+.aos-loader p {
+    color: #000000;
+    opacity: 1;
+}
+
+.aos-line {
+    width: 6px;
+    height: 667px;
+    background: linear-gradient(94.26deg, #000000 9.51%, #282828 90.23%);
+}
+
+.aos-items-right .aos-items span {
+    background-color: #000000;
+    opacity: 1;
+}
+
+.aos-items-right .aos-items span:nth-child(1) {
+    opacity: 1;
+}
+
+.aos-items span:nth-child(1) {
+    background-color: #000000;
+    opacity: 1;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+}
+
+.aos-items p {
+    color: #000000;
+    font-weight: bold;  
+}
+
+.teach-load h3 {
+    color: #000000;
+}
+
+.sw-block h3 {
+    color: black;
+}
+
+.sw-block p {
+    color: #000000;
+    opacity: 0.9;
+}
+
+.sw-block button {
+    width: 143px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+
+footer h3 {
+    color: #000000;
+}
+
+footer p {
+    color: #000000;
+    opacity: 0.9;
+}
+
+.krug {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: linear-gradient(94.26deg, #000000 9.51%, #424242 90.23%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.wrap-txt {
+    color: #000000;
+}
+
+.item-tx p {
+    color: #000000;
+    opacity: 1;
+}
+
+.block {
+    background: linear-gradient(94.26deg, #000000 9.51%, #5c5c5c 90.23%);
+}
+
+
+
+
+.hrefs a {
+    color: #000000;
+}
+
+.hrefs a:hover {
+    font-weight: bold;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+footer input {
+    background-color: rgb(0 0 0 / 75%);
+}
+
+.btn-modal button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 1px #1e1e1e;
+}
+
+.stats button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 1px #1e1e1e;
+}
+
+.sw-block button {
+    border: 1px solid #000000;
+    
+}
+
+.sw-block button:hover {
+    box-shadow: none;
+    background-color: #252525;
+    color: white;
+}
+
+footer button:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+svg {
+    fill: black;
+}
+
+.burger_menu a {
+   background-color: #fff;
+   background: #000;
+}
+
+.mobile_menu_back span {
+    background: #000;
+}
+
+.burger_menu .change_btn {
+    background-image: none;
+    background-color: #fff;
+    box-shadow: -6px 6px 0px 0px black;
+    color: black;
+    font-weight: bold;
+}
+
+.burger_menu {
+    backdrop-filter: blur(5px) grayscale(0.3);
+    
+}
+
+@media (max-width: 650px) {
+    body {
+        background-image: none;
+        background: rgb(200, 154, 252);
+        background: linear-gradient(90deg, rgba(200, 154, 252, 1) 0%, rgba(124, 106, 250, 1) 100%);
+    }
+
+    .page-1 {
+        background-image: none;
+    }
+}
