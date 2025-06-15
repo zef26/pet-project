@@ -112,29 +112,30 @@ cross2.onclick = () => {
 }
 
 //таймер обратного отсчета
-let dateEnd = new Date('2023-01-06 18:40:55')
-dateNow = new Date(),
-  date = Math.floor((dateEnd.getTime() - dateNow.getTime()) / 1000)
 function countdown() {
-  let dateLeft = date,
-    dateTemp = 0;
-  dateTemp = Math.floor(dateLeft / (24 * 60 * 60))
-  dateLeft -= dateTemp * 24 * 60 * 60;
-  if (dateTemp < 10) dateTemp = '0' + dateTemp;
-  document.querySelector('#days').innerHTML = dateTemp;
-  dateTemp = Math.floor(dateLeft / (60 * 60));
-  dateLeft -= dateTemp * 60 * 60;
-  if (dateTemp < 10) dateTemp = "0" + dateTemp;
-  document.querySelector('#hours').innerHTML = dateTemp
-  dateTemp = Math.floor(dateLeft / 60);
-  dateLeft -= dateTemp * 60;
-  if (dateTemp < 10) dateTemp = "0" + dateTemp;
-  document.querySelector('#minutes').innerHTML = dateTemp;
-  if (dateLeft < 10) dateLeft = '0' + dateLeft;
-  document.querySelector('#seconds').innerHTML = dateLeft
+  if (date <= 0) {
+    document.querySelector('#days').textContent = "00";
+    document.querySelector('#hours').textContent = "00";
+    document.querySelector('#minutes').textContent = "00";
+    document.querySelector('#seconds').textContent = "00";
+    return;
+  }
+
+  let days = Math.floor(date / (24 * 60 * 60));
+  let hours = Math.floor((date % (24 * 60 * 60)) / (60 * 60));
+  let minutes = Math.floor((date % (60 * 60)) / 60);
+  let seconds = date % 60;
+
+  document.querySelector('#days').textContent = days.toString().padStart(2, '0');
+  document.querySelector('#hours').textContent = hours.toString().padStart(2, '0');
+  document.querySelector('#minutes').textContent = minutes.toString().padStart(2, '0');
+  document.querySelector('#seconds').textContent = seconds.toString().padStart(2, '0');
+
   date--;
 }
-setInterval(countdown, 1000)
+
+setInterval(countdown, 1000);
+countdown(); // сразу запустить
 // Анимация кнопки подписаться 
 let sub_btn = document.querySelector("footer button")
 function sub_anim() {
