@@ -110,10 +110,13 @@ cross2.onclick = () => {
   mw.classList.remove('modal-push')
   window2.classList.remove('rotate-modal')
 }
+
+//таймер обратного отсчета
 let dateEnd = new Date('2030-09-06T18:40:55'); // ISO формат
 let dateNow = new Date();
 let date = Math.floor((dateEnd.getTime() - dateNow.getTime()) / 1000);
-//таймер обратного отсчета
+
+// Обновление таймера
 function countdown() {
   if (date <= 0) {
     document.querySelector('#days').textContent = "00";
@@ -138,17 +141,20 @@ function countdown() {
 
 setInterval(countdown, 1000);
 countdown(); // сразу запустить
-// Анимация кнопки подписаться 
-let sub_btn = document.querySelector("footer button")
+
+// Анимация кнопки подписаться
+const subBtn = document.querySelector("footer button");
+
 function sub_anim() {
-  if (window.innerWidth < 650) {
-    sub_btn.addEventListener("click", sub_click_mb)
+  if (window.innerWidth < 650 && subBtn) {
+    subBtn.addEventListener("click", () => {
+      subBtn.style.marginTop = "20px";
+    });
   }
 }
-function sub_click_mb() {
-  sub_btn.style.marginTop = "20px"
-}
-sub_anim()
+
+window.addEventListener("load", sub_anim);
+
 // Бургер меню 
 let mb_menu = document.querySelector(".mobile_menu")
 let burger = document.querySelector(".burger")
@@ -231,4 +237,6 @@ let kraska = document.querySelector("#kraska")
 function kraska_mp3() {
   kraska.play()
 }
+
+
 
