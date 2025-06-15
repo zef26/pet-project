@@ -110,7 +110,9 @@ cross2.onclick = () => {
   mw.classList.remove('modal-push')
   window2.classList.remove('rotate-modal')
 }
-
+let dateEnd = new Date('2030-09-06T18:40:55'); // ISO формат
+let dateNow = new Date();
+let date = Math.floor((dateEnd.getTime() - dateNow.getTime()) / 1000);
 //таймер обратного отсчета
 function countdown() {
   if (date <= 0) {
